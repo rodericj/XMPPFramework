@@ -315,8 +315,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN;
 
 - (BOOL)xmppStream:(XMPPStream *)sender didReceiveIQ:(XMPPIQ *)iq
 {
-    NSLog(@"Got an IQ");
-    
 	// This method is invoked on the moduleQueue.
 	
 	// Disco Request:

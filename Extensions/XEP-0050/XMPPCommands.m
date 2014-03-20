@@ -184,7 +184,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN;
 
 - (BOOL)xmppStream:(XMPPStream *)sender didReceiveIQ:(XMPPIQ *)iq
 {
-    NSLog(@"Got an IQ");
     
 /* Without arguments */
     //<iq type='set' to='responder@domain' id='exec1'>
@@ -274,7 +273,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN;
         //    </query>
         //</iq>
         
-        NSLog(@"XMPPCommands: In didReceiveDiscoveryInfo");
         
         // Remember XML hiearchy memory management rules.
         // The passed parameter is a subnode of the IQ, and we need to pass it asynchronously to delegate(s).
